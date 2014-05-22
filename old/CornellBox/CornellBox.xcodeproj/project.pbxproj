@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19893BA2188D346200289B42 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19893BA1188D346200289B42 /* main.cpp */; };
+		19893BA4188D346200289B42 /* CornellBox.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 19893BA3188D346200289B42 /* CornellBox.1 */; };
+		A872080A18C825EB00214F58 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A87207FA18C825EB00214F58 /* Object.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19893B9C188D346200289B42 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				19893BA4188D346200289B42 /* CornellBox.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1932DECC188D446400C6135B /* CornellBox.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CornellBox.mtl; sourceTree = "<group>"; };
+		1932DECD188D446400C6135B /* CornellBox.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CornellBox.obj; sourceTree = "<group>"; };
+		19893B9E188D346200289B42 /* CornellBox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CornellBox; sourceTree = BUILT_PRODUCTS_DIR; };
+		19893BA1188D346200289B42 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		19893BA3188D346200289B42 /* CornellBox.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CornellBox.1; sourceTree = "<group>"; };
+		A87207D518C825EB00214F58 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		A87207D618C825EB00214F58 /* Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
+		A87207D918C825EB00214F58 /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
+		A87207DA18C825EB00214F58 /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
+		A87207DB18C825EB00214F58 /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
+		A87207DC18C825EB00214F58 /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
+		A87207DE18C825EB00214F58 /* stb_image-1.09.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "stb_image-1.09.c"; sourceTree = "<group>"; };
+		A87207DF18C825EB00214F58 /* stb_image-1.16.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "stb_image-1.16.c"; sourceTree = "<group>"; };
+		A87207E018C825EB00214F58 /* SOIL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL.c; sourceTree = "<group>"; };
+		A87207E118C825EB00214F58 /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
+		A87207E218C825EB00214F58 /* stb_image_aug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_aug.c; sourceTree = "<group>"; };
+		A87207E318C825EB00214F58 /* stb_image_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_aug.h; sourceTree = "<group>"; };
+		A87207E418C825EB00214F58 /* stbi_DDS_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
+		A87207E518C825EB00214F58 /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
+		A87207E718C825EB00214F58 /* Matrix3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix3.h; sourceTree = "<group>"; };
+		A87207E818C825EB00214F58 /* Matrix3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Matrix3.inl; sourceTree = "<group>"; };
+		A87207E918C825EB00214F58 /* Matrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix4.h; sourceTree = "<group>"; };
+		A87207EA18C825EB00214F58 /* Matrix4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Matrix4.inl; sourceTree = "<group>"; };
+		A87207EB18C825EB00214F58 /* RayPlaneIntersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayPlaneIntersection.h; sourceTree = "<group>"; };
+		A87207EC18C825EB00214F58 /* RayPlaneIntersection.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RayPlaneIntersection.inl; sourceTree = "<group>"; };
+		A87207ED18C825EB00214F58 /* RaySphereIntersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaySphereIntersection.h; sourceTree = "<group>"; };
+		A87207EE18C825EB00214F58 /* RaySphereIntersection.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RaySphereIntersection.inl; sourceTree = "<group>"; };
+		A87207EF18C825EB00214F58 /* RayTriangleIntersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayTriangleIntersection.h; sourceTree = "<group>"; };
+		A87207F018C825EB00214F58 /* RayTriangleIntersection.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RayTriangleIntersection.inl; sourceTree = "<group>"; };
+		A87207F118C825EB00214F58 /* Tuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tuple.h; sourceTree = "<group>"; };
+		A87207F218C825EB00214F58 /* Tuple.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tuple.inl; sourceTree = "<group>"; };
+		A87207F318C825EB00214F58 /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2.h; sourceTree = "<group>"; };
+		A87207F418C825EB00214F58 /* Vector2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vector2.inl; sourceTree = "<group>"; };
+		A87207F518C825EB00214F58 /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
+		A87207F618C825EB00214F58 /* Vector3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vector3.inl; sourceTree = "<group>"; };
+		A87207F718C825EB00214F58 /* Vector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector4.h; sourceTree = "<group>"; };
+		A87207F818C825EB00214F58 /* Vector4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vector4.inl; sourceTree = "<group>"; };
+		A87207FA18C825EB00214F58 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
+		A87207FB18C825EB00214F58 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		A872080E18C826EB00214F58 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = CornellBox/Camera.h; sourceTree = "<group>"; };
+		A872080F18C826EB00214F58 /* Camera.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Camera.inl; path = CornellBox/Camera.inl; sourceTree = "<group>"; };
+		A872081018C8277000214F58 /* AObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AObject.h; path = CornellBox/AObject.h; sourceTree = "<group>"; };
+		A872081118C8277000214F58 /* AObject.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AObject.inl; path = CornellBox/AObject.inl; sourceTree = "<group>"; };
+		A872081218C8277000214F58 /* ObjObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjObject.h; path = CornellBox/ObjObject.h; sourceTree = "<group>"; };
+		A872081318C8277000214F58 /* ObjObject.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ObjObject.inl; path = CornellBox/ObjObject.inl; sourceTree = "<group>"; };
+		A872081518C8289100214F58 /* Framebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Framebuffer.h; path = CornellBox/Framebuffer.h; sourceTree = "<group>"; };
+		A872081618C8289100214F58 /* Framebuffer.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Framebuffer.inl; path = CornellBox/Framebuffer.inl; sourceTree = "<group>"; };
+		A872081718C8289100214F58 /* Ray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ray.h; path = CornellBox/Ray.h; sourceTree = "<group>"; };
+		A872081818C8289100214F58 /* Ray.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Ray.inl; path = CornellBox/Ray.inl; sourceTree = "<group>"; };
+		A872081918C82FFA00214F58 /* RenderContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderContext.h; path = CornellBox/RenderContext.h; sourceTree = "<group>"; };
+		A872081A18C82FFA00214F58 /* RenderContext.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RenderContext.inl; path = CornellBox/RenderContext.inl; sourceTree = "<group>"; };
+		A872081B18C82FFA00214F58 /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sphere.h; path = CornellBox/Sphere.h; sourceTree = "<group>"; };
+		A872081C18C82FFA00214F58 /* Sphere.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Sphere.inl; path = CornellBox/Sphere.inl; sourceTree = "<group>"; };
+		A872081D18C82FFA00214F58 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Triangle.h; path = CornellBox/Triangle.h; sourceTree = "<group>"; };
+		A872081E18C82FFA00214F58 /* Triangle.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Triangle.inl; path = CornellBox/Triangle.inl; sourceTree = "<group>"; };
+		A872081F18C8323400214F58 /* test.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.ppm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19893B9B188D346200289B42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19893B95188D346200289B42 = {
+			isa = PBXGroup;
+			children = (
+				A872081418C8287100214F58 /* Renderer */,
+				A87207D418C825EB00214F58 /* CGK */,
+				19893BA0188D346200289B42 /* CornellBox */,
+				19893B9F188D346200289B42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19893B9F188D346200289B42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19893B9E188D346200289B42 /* CornellBox */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19893BA0188D346200289B42 /* CornellBox */ = {
+			isa = PBXGroup;
+			children = (
+				A872081F18C8323400214F58 /* test.ppm */,
+				1932DECC188D446400C6135B /* CornellBox.mtl */,
+				1932DECD188D446400C6135B /* CornellBox.obj */,
+				19893BA1188D346200289B42 /* main.cpp */,
+				19893BA3188D346200289B42 /* CornellBox.1 */,
+			);
+			path = CornellBox;
+			sourceTree = "<group>";
+		};
+		A87207D418C825EB00214F58 /* CGK */ = {
+			isa = PBXGroup;
+			children = (
+				A87207D518C825EB00214F58 /* CMakeLists.txt */,
+				A87207D618C825EB00214F58 /* Error.h */,
+				A87207D718C825EB00214F58 /* External */,
+				A87207E618C825EB00214F58 /* Math */,
+				A87207F918C825EB00214F58 /* Obj */,
+			);
+			name = CGK;
+			path = ../../CGK/Src/CGK;
+			sourceTree = "<group>";
+		};
+		A87207D718C825EB00214F58 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				A87207D818C825EB00214F58 /* SOIL */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		A87207D818C825EB00214F58 /* SOIL */ = {
+			isa = PBXGroup;
+			children = (
+				A87207D918C825EB00214F58 /* image_DXT.c */,
+				A87207DA18C825EB00214F58 /* image_DXT.h */,
+				A87207DB18C825EB00214F58 /* image_helper.c */,
+				A87207DC18C825EB00214F58 /* image_helper.h */,
+				A87207DD18C825EB00214F58 /* original */,
+				A87207E018C825EB00214F58 /* SOIL.c */,
+				A87207E118C825EB00214F58 /* SOIL.h */,
+				A87207E218C825EB00214F58 /* stb_image_aug.c */,
+				A87207E318C825EB00214F58 /* stb_image_aug.h */,
+				A87207E418C825EB00214F58 /* stbi_DDS_aug.h */,
+				A87207E518C825EB00214F58 /* stbi_DDS_aug_c.h */,
+			);
+			path = SOIL;
+			sourceTree = "<group>";
+		};
+		A87207DD18C825EB00214F58 /* original */ = {
+			isa = PBXGroup;
+			children = (
+				A87207DE18C825EB00214F58 /* stb_image-1.09.c */,
+				A87207DF18C825EB00214F58 /* stb_image-1.16.c */,
+			);
+			path = original;
+			sourceTree = "<group>";
+		};
+		A87207E618C825EB00214F58 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				A87207E718C825EB00214F58 /* Matrix3.h */,
+				A87207E818C825EB00214F58 /* Matrix3.inl */,
+				A87207E918C825EB00214F58 /* Matrix4.h */,
+				A87207EA18C825EB00214F58 /* Matrix4.inl */,
+				A87207EB18C825EB00214F58 /* RayPlaneIntersection.h */,
+				A87207EC18C825EB00214F58 /* RayPlaneIntersection.inl */,
+				A87207ED18C825EB00214F58 /* RaySphereIntersection.h */,
+				A87207EE18C825EB00214F58 /* RaySphereIntersection.inl */,
+				A87207EF18C825EB00214F58 /* RayTriangleIntersection.h */,
+				A87207F018C825EB00214F58 /* RayTriangleIntersection.inl */,
+				A87207F118C825EB00214F58 /* Tuple.h */,
+				A87207F218C825EB00214F58 /* Tuple.inl */,
+				A87207F318C825EB00214F58 /* Vector2.h */,
+				A87207F418C825EB00214F58 /* Vector2.inl */,
+				A87207F518C825EB00214F58 /* Vector3.h */,
+				A87207F618C825EB00214F58 /* Vector3.inl */,
+				A87207F718C825EB00214F58 /* Vector4.h */,
+				A87207F818C825EB00214F58 /* Vector4.inl */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		A87207F918C825EB00214F58 /* Obj */ = {
+			isa = PBXGroup;
+			children = (
+				A87207FA18C825EB00214F58 /* Object.cpp */,
+				A87207FB18C825EB00214F58 /* Object.h */,
+			);
+			path = Obj;
+			sourceTree = "<group>";
+		};
+		A872081418C8287100214F58 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				A872081918C82FFA00214F58 /* RenderContext.h */,
+				A872081A18C82FFA00214F58 /* RenderContext.inl */,
+				A872081B18C82FFA00214F58 /* Sphere.h */,
+				A872081C18C82FFA00214F58 /* Sphere.inl */,
+				A872081D18C82FFA00214F58 /* Triangle.h */,
+				A872081E18C82FFA00214F58 /* Triangle.inl */,
+				A872081518C8289100214F58 /* Framebuffer.h */,
+				A872081618C8289100214F58 /* Framebuffer.inl */,
+				A872081718C8289100214F58 /* Ray.h */,
+				A872081818C8289100214F58 /* Ray.inl */,
+				A872081018C8277000214F58 /* AObject.h */,
+				A872081118C8277000214F58 /* AObject.inl */,
+				A872081218C8277000214F58 /* ObjObject.h */,
+				A872081318C8277000214F58 /* ObjObject.inl */,
+				A872080E18C826EB00214F58 /* Camera.h */,
+				A872080F18C826EB00214F58 /* Camera.inl */,
+			);
+			name = Renderer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19893B9D188D346200289B42 /* CornellBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19893BA7188D346200289B42 /* Build configuration list for PBXNativeTarget "CornellBox" */;
+			buildPhases = (
+				19893B9A188D346200289B42 /* Sources */,
+				19893B9B188D346200289B42 /* Frameworks */,
+				19893B9C188D346200289B42 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CornellBox;
+			productName = CornellBox;
+			productReference = 19893B9E188D346200289B42 /* CornellBox */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19893B96188D346200289B42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Arno in Wolde Lübke";
+			};
+			buildConfigurationList = 19893B99188D346200289B42 /* Build configuration list for PBXProject "CornellBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 19893B95188D346200289B42;
+			productRefGroup = 19893B9F188D346200289B42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19893B9D188D346200289B42 /* CornellBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19893B9A188D346200289B42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A872080A18C825EB00214F58 /* Object.cpp in Sources */,
+				19893BA2188D346200289B42 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		19893BA5188D346200289B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		19893BA6188D346200289B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		19893BA8188D346200289B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/scatterbrain/Documents/Projects/Private/RayTracing/CornellBox,
+					/Users/scatterbrain/Documents/Projects/Private/RayTracing/CornellBox/CornellBox,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19893BA9188D346200289B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/scatterbrain/Documents/Projects/Private/RayTracing/CornellBox,
+					/Users/scatterbrain/Documents/Projects/Private/RayTracing/CornellBox/CornellBox,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19893B99188D346200289B42 /* Build configuration list for PBXProject "CornellBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19893BA5188D346200289B42 /* Debug */,
+				19893BA6188D346200289B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19893BA7188D346200289B42 /* Build configuration list for PBXNativeTarget "CornellBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19893BA8188D346200289B42 /* Debug */,
+				19893BA9188D346200289B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19893B96188D346200289B42 /* Project object */;
+}

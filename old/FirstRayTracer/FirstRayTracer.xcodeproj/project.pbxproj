@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1955877A187FF3D40077AD89 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19558775187FF3D40077AD89 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19558763187FF3890077AD89 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19558765187FF3890077AD89 /* FirstRayTracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstRayTracer; sourceTree = BUILT_PRODUCTS_DIR; };
+		19558771187FF3D40077AD89 /* AObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AObject.h; path = FirstRayTracer/AObject.h; sourceTree = "<group>"; };
+		19558772187FF3D40077AD89 /* AObject.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AObject.inl; path = FirstRayTracer/AObject.inl; sourceTree = "<group>"; };
+		19558773187FF3D40077AD89 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = FirstRayTracer/Camera.h; sourceTree = "<group>"; };
+		19558774187FF3D40077AD89 /* Camera.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Camera.inl; path = FirstRayTracer/Camera.inl; sourceTree = "<group>"; };
+		19558775187FF3D40077AD89 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		19558776187FF3D40077AD89 /* Ray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ray.h; path = FirstRayTracer/Ray.h; sourceTree = "<group>"; };
+		19558777187FF3D40077AD89 /* Ray.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Ray.inl; path = FirstRayTracer/Ray.inl; sourceTree = "<group>"; };
+		19558778187FF3D40077AD89 /* RenderContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderContext.h; path = FirstRayTracer/RenderContext.h; sourceTree = "<group>"; };
+		19558779187FF3D40077AD89 /* RenderContext.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RenderContext.inl; path = FirstRayTracer/RenderContext.inl; sourceTree = "<group>"; };
+		1955877C187FF42D0077AD89 /* Framebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Framebuffer.h; path = FirstRayTracer/Framebuffer.h; sourceTree = "<group>"; };
+		1955877D187FF42D0077AD89 /* Framebuffer.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Framebuffer.inl; path = FirstRayTracer/Framebuffer.inl; sourceTree = "<group>"; };
+		1955877E187FFA670077AD89 /* Sphere.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Sphere.inl; path = FirstRayTracer/Sphere.inl; sourceTree = "<group>"; };
+		1955877F187FFA670077AD89 /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sphere.h; path = FirstRayTracer/Sphere.h; sourceTree = "<group>"; };
+		19558787188000C10077AD89 /* test.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.ppm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19558762187FF3890077AD89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1955875C187FF3890077AD89 = {
+			isa = PBXGroup;
+			children = (
+				19558767187FF3890077AD89 /* FirstRayTracer */,
+				19558766187FF3890077AD89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19558766187FF3890077AD89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19558765187FF3890077AD89 /* FirstRayTracer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19558767187FF3890077AD89 /* FirstRayTracer */ = {
+			isa = PBXGroup;
+			children = (
+				19558787188000C10077AD89 /* test.ppm */,
+				19558786187FFFEA0077AD89 /* RenderContext */,
+				19558785187FFFDD0077AD89 /* Ray */,
+				19558784187FFFD00077AD89 /* Camera */,
+				19558783187FFFC50077AD89 /* Framebuffer */,
+				19558781187FFFA50077AD89 /* Object */,
+				19558782187FFFB60077AD89 /* Sphere */,
+				19558775187FF3D40077AD89 /* main.cpp */,
+			);
+			path = FirstRayTracer;
+			sourceTree = "<group>";
+		};
+		19558781187FFFA50077AD89 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				19558771187FF3D40077AD89 /* AObject.h */,
+				19558772187FF3D40077AD89 /* AObject.inl */,
+			);
+			name = Object;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		19558782187FFFB60077AD89 /* Sphere */ = {
+			isa = PBXGroup;
+			children = (
+				1955877E187FFA670077AD89 /* Sphere.inl */,
+				1955877F187FFA670077AD89 /* Sphere.h */,
+			);
+			name = Sphere;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		19558783187FFFC50077AD89 /* Framebuffer */ = {
+			isa = PBXGroup;
+			children = (
+				1955877C187FF42D0077AD89 /* Framebuffer.h */,
+				1955877D187FF42D0077AD89 /* Framebuffer.inl */,
+			);
+			name = Framebuffer;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		19558784187FFFD00077AD89 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				19558773187FF3D40077AD89 /* Camera.h */,
+				19558774187FF3D40077AD89 /* Camera.inl */,
+			);
+			name = Camera;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		19558785187FFFDD0077AD89 /* Ray */ = {
+			isa = PBXGroup;
+			children = (
+				19558776187FF3D40077AD89 /* Ray.h */,
+				19558777187FF3D40077AD89 /* Ray.inl */,
+			);
+			name = Ray;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		19558786187FFFEA0077AD89 /* RenderContext */ = {
+			isa = PBXGroup;
+			children = (
+				19558778187FF3D40077AD89 /* RenderContext.h */,
+				19558779187FF3D40077AD89 /* RenderContext.inl */,
+			);
+			name = RenderContext;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19558764187FF3890077AD89 /* FirstRayTracer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1955876E187FF3890077AD89 /* Build configuration list for PBXNativeTarget "FirstRayTracer" */;
+			buildPhases = (
+				19558761187FF3890077AD89 /* Sources */,
+				19558762187FF3890077AD89 /* Frameworks */,
+				19558763187FF3890077AD89 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirstRayTracer;
+			productName = FirstRayTracer;
+			productReference = 19558765187FF3890077AD89 /* FirstRayTracer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1955875D187FF3890077AD89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Arno in Wolde Lübke";
+			};
+			buildConfigurationList = 19558760187FF3890077AD89 /* Build configuration list for PBXProject "FirstRayTracer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1955875C187FF3890077AD89;
+			productRefGroup = 19558766187FF3890077AD89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19558764187FF3890077AD89 /* FirstRayTracer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19558761187FF3890077AD89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1955877A187FF3D40077AD89 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1955876C187FF3890077AD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1955876D187FF3890077AD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1955876F187FF3890077AD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19558770187FF3890077AD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19558760187FF3890077AD89 /* Build configuration list for PBXProject "FirstRayTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1955876C187FF3890077AD89 /* Debug */,
+				1955876D187FF3890077AD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1955876E187FF3890077AD89 /* Build configuration list for PBXNativeTarget "FirstRayTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1955876F187FF3890077AD89 /* Debug */,
+				19558770187FF3890077AD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1955875D187FF3890077AD89 /* Project object */;
+}

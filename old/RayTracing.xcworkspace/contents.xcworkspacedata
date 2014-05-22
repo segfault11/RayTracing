@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CornelBox_01/CornelBox_01.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CornellBox/CornellBox.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RayTriangleIntersection/RayTriangleIntersection.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SAPLesson8/SAPLesson8.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FirstRayTracer/FirstRayTracer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RaySphereIntersection/RaySphereIntersection.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CreatingPrimaryRays/CreatingPrimaryRays.xcodeproj">
+   </FileRef>
+</Workspace>
