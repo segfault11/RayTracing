@@ -31,7 +31,7 @@ extern "C"
 typedef struct {
 	FxsVector3 point;
 	FxsVector3 normal;
-	FxsVector3 color;
+	unsigned char color[3];
 } ShadingRecord;
 
 typedef struct Object* ObjectPtr;

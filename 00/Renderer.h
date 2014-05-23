@@ -6,12 +6,26 @@ extern "C"
 {
 #endif
 
+#include <Fxs/Math/Matrix4.h>
 #include <Fxs/Image/Image.h>
 #include "Object.h"
 
+typedef struct RenderContext RenderContext;
+
+struct RenderContext {
+	FxsImage *image;
+	ObjectPtr object;    
+	unsigned char bgColor[3];
+	unsigned char defaultColor[3]; /* default color of nodes that have no 
+						    	   ** diffuse color attached to it
+								   */
+	FxsMatrix4 cameraToWorld;
+};
+
+
 typedef struct Renderer* RendererPtr;
 
-RendererPtr RendererCreate(FxsImage* image, ObjectPtr object);
+RendererPtr RendererCreate(RenderContext *rc);
 void RendererDestroy(RendererPtr *renderer);
 void RendererRender(RendererPtr renderer, const char* filename, float fovy);
 

@@ -36,6 +36,7 @@
 		CC88995D192A23BD001FB5C7 /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cube.obj; path = ../../../00/cube.obj; sourceTree = "<group>"; };
 		CC88995E192A23BD001FB5C7 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Main.c; path = ../../../00/Main.c; sourceTree = "<group>"; };
 		CC889960192A24C4001FB5C7 /* Test.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = Test.bmp; path = ../../../00/Test.bmp; sourceTree = "<group>"; };
+		CCA984CC192F7BDD00420BEE /* CornellBox-Original.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "CornellBox-Original.obj"; path = "../../../00/CornellBox-Original.obj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 		CC5313BE192A0DC8005D45A1 /* 00 */ = {
 			isa = PBXGroup;
 			children = (
+				CCA984CC192F7BDD00420BEE /* CornellBox-Original.obj */,
 				CC889960192A24C4001FB5C7 /* Test.bmp */,
 				CC88995D192A23BD001FB5C7 /* cube.obj */,
 				CC88995E192A23BD001FB5C7 /* Main.c */,

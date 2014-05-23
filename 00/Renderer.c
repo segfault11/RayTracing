@@ -4,21 +4,21 @@
 #include <math.h>
 #include "Renderer.h"
 
+#define VEC3FROMVEC4(V3, V4) V3.x = V4.x; V3.y = V4.y; V3.z = V4.z;
+
 typedef struct Renderer Renderer;
 
 struct Renderer {
-    FxsImage *image;
-	ObjectPtr object;
+	RenderContext *renderContext;
 };
 
-RendererPtr RendererCreate(FxsImage* image, ObjectPtr object)
+RendererPtr RendererCreate(RenderContext *rc)
 {
 	RendererPtr r = malloc(sizeof(Renderer));	
 
-	assert(image->numChannels == 3);
-
-	r->image = image;
-	r->object = object;
+	assert(rc->image->numChannels == 3);
+	
+	r->renderContext = rc;
 
 	return r;
 }
@@ -31,31 +31,42 @@ void RendererDestroy(RendererPtr *renderer)
 void RendererRender(RendererPtr renderer, const char* filename, float fovy)
 {
 	Ray r;
+    FxsVector4 vtmp;
 	int i, j;
-	FxsVector3MakeZero(&r.origin);	
-	float asp = ((float)renderer->image->width)/renderer->image->height;
+	FxsImage *img = renderer->renderContext->image;
+	ObjectPtr obj = renderer->renderContext->object;
+	float asp = ((float)img->width)/img->height;
 	float tanfov = tanf(M_PI / 180.0f * fovy / 2.0);
 	float t;
 	ShadingRecord sr;
-	unsigned char fg[3] = {255, 0, 0};
-	unsigned char bg[3] = {255, 255, 255};
 
-	for (i = 0; i < renderer->image->width; i++) {
-	    for (j = 0; j < renderer->image->height; j++) {
-	        r.direction.x = 2.0f * ((i + 0.5f)/renderer->image->width) - 1.0f;
-	        r.direction.y = 2.0f * ((j + 0.5f)/renderer->image->height) - 1.0f;
+	for (i = 0; i < img->width; i++) {
+	    for (j = 0; j < img->height; j++) {
+            FxsVector3MakeZero(&r.origin);
+	        r.direction.x = 2.0f * ((i + 0.5f)/img->width) - 1.0f;
+	        r.direction.y = 2.0f * ((j + 0.5f)/img->height) - 1.0f;
 			r.direction.x *= (tanfov * asp);
 			r.direction.y *= tanfov;
             r.direction.z = -1.0f;
+           	 
+            FxsMatrix4MultiplyVector3(&vtmp, &renderer->renderContext->cameraToWorld, &r.origin);
+            VEC3FROMVEC4(r.origin, vtmp);
+            FxsMatrix4MultiplyVector3(&vtmp, &renderer->renderContext->cameraToWorld, &r.direction);
+            VEC3FROMVEC4(r.direction, vtmp);
+            FxsVector3Substract(&r.direction, &r.direction, &r.origin);
             FxsVector3Normalize(&r.direction);
             
-			if (ObjectIsIntersectedByRay(renderer->object, &t, &sr, &r)) {
-			    FxsImageSet(renderer->image, i, renderer->image->height - 1 - j, fg);
+			sr.color[0] = renderer->renderContext->defaultColor[0];
+			sr.color[1] = renderer->renderContext->defaultColor[1];
+			sr.color[2] = renderer->renderContext->defaultColor[2];
+
+			if (ObjectIsIntersectedByRay(obj, &t, &sr, &r)) {
+			    FxsImageSet(img, i, img->height - 1 - j, sr.color);
 			} else {
-			    FxsImageSet(renderer->image, i, renderer->image->height - 1 - j, bg);
+			    FxsImageSet(img, i, img->height - 1 - j, renderer->renderContext->bgColor);
 			}
 	    }
 	}
 
-	FxsImageSave(renderer->image, filename);
+	FxsImageSave(img, filename);
 }
