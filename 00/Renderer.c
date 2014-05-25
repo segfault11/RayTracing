@@ -28,6 +28,13 @@ void RendererDestroy(RendererPtr *renderer)
 
 }
 
+static void ComputeColor(const ShadingRecord *sr, unsigned char color[3])
+{
+	color[0] = sr->normal.x * 255;
+	color[1] = sr->normal.y * 255;
+	color[2] = sr->normal.z * 255;
+}
+
 void RendererRender(RendererPtr renderer, const char* filename, float fovy)
 {
 	Ray r;
@@ -39,6 +46,7 @@ void RendererRender(RendererPtr renderer, const char* filename, float fovy)
 	float tanfov = tanf(M_PI / 180.0f * fovy / 2.0);
 	float t;
 	ShadingRecord sr;
+	unsigned char color[3];
 
 	for (i = 0; i < img->width; i++) {
 	    for (j = 0; j < img->height; j++) {
@@ -61,7 +69,8 @@ void RendererRender(RendererPtr renderer, const char* filename, float fovy)
 			sr.color[2] = renderer->renderContext->defaultColor[2];
 
 			if (ObjectIsIntersectedByRay(obj, &t, &sr, &r)) {
-			    FxsImageSet(img, i, img->height - 1 - j, sr.color);
+				ComputeColor(&sr, color);
+			    FxsImageSet(img, i, img->height - 1 - j, color);
 			} else {
 			    FxsImageSet(img, i, img->height - 1 - j, renderer->renderContext->bgColor);
 			}
